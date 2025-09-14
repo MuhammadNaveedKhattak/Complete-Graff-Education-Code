@@ -1,0 +1,40 @@
+[09-Sep-2025 04:51:42 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 04:51:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 04:51:54 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 04:51:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:29:37 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:29:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:29:59 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:29:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:02 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:52 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:56 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:58 UTC] PHP Warning:  require(phpmailer/Exception.php): Failed to open stream: No such file or directory in /home/grafsmlz/public_html/send.php on line 6
+[09-Sep-2025 05:30:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/Exception.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grafsmlz/public_html/send.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grafsmlz/public_html/send.php on line 6

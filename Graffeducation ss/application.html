@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Application Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/site.css" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="shadow-sm border-bottom" style="background-color:#0F3D2E;">  
+  <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+    
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-warning" href="index.html">
+      <img src="assets/favicon.jpg" alt="Graff Logo" class="me-2 navbar-logo">
+      <span class="brand-text">Graff Education Recruitment</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="programs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+          <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
+            <li><a class="dropdown-item" href="business-management.html">Business Management</a></li>
+            <li><a class="dropdown-item" href="hospitality-management.html">Hospitality Management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="how-to-apply.html">How to Apply</a></li>
+        <li class="nav-item"><a class="nav-link" href="application.html">Application Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container py-5"> 
+  <header class="mb-4 text-center">
+    <h1 class="h3 section-title">Application Form</h1>
+    <p class="text-muted">All fields marked * are required</p>
+  </header>
+  
+  <form action="send.php" method="POST" enctype="multipart/form-data" class="row g-3">
+
+    <!-- Name Fields -->
+    <div class="col-md-6">
+      <label class="form-label">First Name *</label>
+      <input type="text" name="first_name" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Surname *</label>
+      <input type="text" name="surname" class="form-control" required>
+    </div>
+
+    <!-- Contact Fields -->
+    <div class="col-md-6">
+      <label class="form-label">Email *</label>
+      <input type="email" name="email" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Mobile Phone (WhatsApp) *</label>
+      <input type="text" name="phone" class="form-control" required>
+    </div>
+
+    <!-- Nationality + City -->
+    <div class="col-md-6">
+      <label class="form-label">Nationality</label>
+      <input type="text" name="nationality" class="form-control">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Current City in the UK</label>
+      <input type="text" name="city" class="form-control">
+    </div>
+
+    <!-- Program Choice -->
+    <div class="col-12">
+      <label class="form-label">Chosen Program *</label>
+      <select name="program" class="form-select" required>
+        <option value="">Select a program...</option>
+        <option>Business Management</option>
+        <option>Hospitality Management</option>
+      </select>
+    </div>
+
+    <!-- Document Uploads -->
+    <div class="col-md-6">
+      <label class="form-label">Upload Diploma / Certificate *</label>
+      <input type="file" name="diploma" class="form-control" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Upload UK Residence Status (Pre-Settled, Settled, or other permit) *</label>
+      <input type="file" name="residence" class="form-control" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic" required>
+    </div>
+
+    <!-- NEW Uploads -->
+    <div class="col-md-6">
+      <label class="form-label">Upload Passport *</label>
+      <input type="file" name="passport" class="form-control" accept=".pdf,.jpg,.jpeg,.png,.heic" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Upload Passport-style Photo *</label>
+      <input type="file" name="passport_photo" class="form-control" accept=".jpg,.jpeg,.png,.heic" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Upload NIN (National Insurance Number) *</label>
+      <input type="file" name="nin" class="form-control" accept=".pdf,.jpg,.jpeg,.png,.heic" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Upload Proof of Address (not older than 3 months) *</label>
+      <input type="file" name="address_proof" class="form-control" accept=".pdf,.jpg,.jpeg,.png,.heic" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Upload CV *</label>
+      <input type="file" name="cv" class="form-control" accept=".pdf,.doc,.docx" required>
+    </div>
+    
+    <!-- Financial Support -->
+<div class="col-12">
+  <label class="form-label">Financial Support *</label><br>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="financial_support" id="self_funding" value="Self Funding" required>
+    <label class="form-check-label" for="self_funding">Self Funding</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="financial_support" id="student_finance" value="Student Finance" required>
+    <label class="form-check-label" for="student_finance">Student Finance</label>
+  </div>
+</div>
+
+<!-- How did you hear about Graff Education Recruitment -->
+<div class="col-12">
+  <label class="form-label">How did you hear about Graff Education Recruitment?</label>
+  <select name="referral_source" id="referral_source" class="form-select">
+    <option value="">Select an option...</option>
+    <option value="Friends or Family">Friends or Family</option>
+    <option value="Agent">Agent</option>
+    <option value="Website">Website</option>
+    <option value="Internet">Internet</option>
+  </select>
+</div>
+
+<!-- Show agent details only if 'Agent' is selected -->
+<div class="col-md-6 d-none" id="agent_name_field">
+  <label class="form-label">Agent's Name</label>
+  <input type="text" name="agent_name" class="form-control">
+</div>
+<div class="col-md-6 d-none" id="agent_company_field">
+  <label class="form-label">Agent's Company Name</label>
+  <input type="text" name="agent_company" class="form-control">
+</div>
+
+    
+        <!-- Disability Question -->
+<div class="col-md-6">
+  <label class="form-label">Do you have any disabilities? *</label>
+  <select name="disability" id="disability" class="form-select" required>
+    <option value="">Select an option...</option>
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+  </select>
+</div>
+<div class="col-md-6">
+  <label class="form-label">If yes, please describe</label>
+  <input type="text" name="disability_details" id="disability_details" class="form-control" placeholder="Type disability details if applicable">
+</div>
+
+
+    <!-- Consent -->
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="1" id="consent" name="consent" required>
+        <label class="form-check-label" for="consent">
+          I agree to my data being processed for the purposes of admission and student finance support.
+        </label>
+      </div>
+      <div class="form-text form-hint">
+        Your documents are stored securely and shared only with the admissions team.
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="col-12">
+      <button type="submit" class="btn btn-success btn-lg">Submit Application</button>
+    </div>
+
+  </form>
+</main>
+
+
+<footer class="site-footer mt-5">
+  <div class="container py-4">
+    <div class="row gy-4">
+      
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">Graff Education Recruitment</h5>
+        <p class="small mb-2">Professional, supportive, trustworthy.</p>
+        <p class="small mb-0">© 2025 Graff Education Recruitment. All rights reserved.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="footer-subtitle">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="how-to-apply.html">How to Apply</a></li>
+          <li><a href="application.html">Application Form</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-12">
+        <h6 class="footer-subtitle">Contact Us</h6>
+        <p class="mb-1"><i class="bi bi-envelope-fill text-gold"></i> 
+          <a href="mailto:admin@graffeducationrecruitment.co.uk">admin@graffeducationrecruitment.co.uk</a>
+        </p>
+        <p class="mb-0"><i class="bi bi-geo-alt-fill text-gold"></i> United Kingdom</p>
+        <div class="mt-3">
+          <a href="privacy.html" class="me-3">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const disabilitySelect = document.getElementById("disability");
+  const disabilityDetails = document.getElementById("disability_details");
+
+  disabilitySelect.addEventListener("change", function() {
+    if (this.value === "Yes") {
+      disabilityDetails.setAttribute("required", "required");
+    } else {
+      disabilityDetails.removeAttribute("required");
+      disabilityDetails.value = ""; // clear field if "No"
+    }
+  });
+  
+  // Show/hide agent fields based on referral source
+  document.getElementById('referral_source').addEventListener('change', function () {
+    const agentFields = ['agent_name_field', 'agent_company_field'];
+    if (this.value === 'Agent') {
+      agentFields.forEach(id => document.getElementById(id).classList.remove('d-none'));
+    } else {
+      agentFields.forEach(id => document.getElementById(id).classList.add('d-none'));
+    }
+  });
+
+  
+</script>
+
+
+</body>
+</html>
